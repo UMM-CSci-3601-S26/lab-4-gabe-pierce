@@ -10,6 +10,7 @@ import { AddItemComponent } from './inventory/add_inventory_item.component';
 import { ModifyItemComponent } from './inventory/modify_inventory_item.component';
 import { SupplyListComponent } from './supplylist/supplylist.component';
 import { FamilyListComponent } from './family/family-list.component';
+import { AddFamilyComponent } from './family/add-family.component';
 
 // Note that the 'users/new' route needs to come before 'users/:id'.
 // If 'users/:id' came first, it would accidentally catch requests to
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'users/:id', component: UserProfileComponent, title: 'User Profile'},
   {path: 'inventory', component: InventoryListComponent, title: 'Inventory'},
   {path: 'family', component: FamilyListComponent, title: 'Family'},
+  {path: 'family/new', component: AddFamilyComponent, title: 'Add Family'},
   {path: 'inventory/new', component: AddItemComponent, title: 'Add Item'},
   //TODO, we want each item in the list to have its own page for modifying stuff?
   {path: 'inventory/:id', component: ModifyItemComponent, title: 'Item Profile'},
